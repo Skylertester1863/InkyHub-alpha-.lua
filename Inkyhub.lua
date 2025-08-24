@@ -16,6 +16,8 @@ local raycastModule = require(ReplicatedStorage.Events.Modules.RaycastModule)
 
 local ESPConns = {}
 local ESPObjects = {}
+getgenv().FOV = 180
+getgenv().AimSilentEnabled = false
 
 -- ==========================
 -- Funciones de Utilidad
@@ -43,9 +45,7 @@ end
 
 -- ==========================
 -- Aimbot Functions (con AimSilent real)
--- ==========================
-getgenv().FOV = 180
-getgenv().AimSilentEnabled = false
+-- =========================
 
 -- círculo de FOV para AimSilent
 local fovCircle = Drawing.new("Circle")
